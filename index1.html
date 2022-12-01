@@ -1,0 +1,91 @@
+
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/stayl.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Детали</title>
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <header id="header" class="header">
+            <div class="container">
+                <div class='nav'>
+                    <a href='#'>
+                        <img src='./img/logo.png' class='logo'>
+                    </a>
+
+                    <ul class='menu'>
+
+                        </li>
+                        <li style="cursor: pointer" , id='Button_Reg'>
+                            Регистрация
+                        </li>
+                        <li style="cursor: pointer" , id='Button_Enter'>
+                            Вход
+                        </li>
+                    </ul>
+                    <button class='menu-open'>
+                        <img src='./img/menu.svg'>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="description">
+
+            <div class="photoDescription">
+                <h4>Заголовок</h4>
+                <img src="./img/image2.png" alt="Rectangle5" class="adve">
+            </div>
+            <div class="Information">
+                <div class="InformationBut">
+
+                    <h4>2545 ₽</h4>
+                    <button style="background: #FF006B; border-radius: 10px;" class="button Telephone">
+            <span>Телефон: +7905777777<br>
+
+          </span>
+                    </button>
+
+                    <form method="POST" action="/respond/<?php echo $params['data'][0]['id_advertisement'] ?>">
+                                <button type="submit" name="respond" class="button Respond" value="1"
+                                        style="background: #FF006B; border-radius: 10px;">
+                                    <span>Откликнуться</span>
+                                </button>
+                    </form>
+                    <p class="text" style="color:black">
+                        Подходит для паспорта и автодокументов.
+                        Натуральная кожа и высокопрочный пластик.
+
+                        Изделие изготовлено из кожи сорта краст. Это кожа как она есть. Без покрытия и обработки, с естественным рисунком (мерея) или без него. Текстура чаще всего ярко выражена. Краст проходит барабанное крашение со специальным режимом, называемом сквозным прокрасом. Можно не бояться, что окрашенная лицевая сторона отслоится или потрескается. Поверхность может иметь мелкие дефекты небольшие отклонения в цвете по полотну кожи, точки, складки, шрамы.
+
+                        Ручная работа. Точная копия невозможна!
+
+                        Цвет изделия в реальности может отличаться от цвета на фото. Это связано с обработкой фото и особенностями отображения цветов на разных экранах.
+
+
+                        Барельеф: Дракон
+                        Цвет кожи: Черный
+                        Формат: Обложка для документов
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="listResponders">
+        </div>
+    </div>
+</section>
+<?php modal_windows(); ?>
+<?php footer_site(); ?>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="./js/main.js"></script></body>
+</html>
